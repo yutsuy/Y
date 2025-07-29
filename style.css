@@ -1,0 +1,184 @@
+/* Googleフォント */
+body {
+  font-family: 'Zen Maru Gothic', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fff8f0;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* ヘッダー */
+header {
+  background-color: #d8b08c;
+  color: #fff;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+.subtitle {
+  font-size: 1.2rem;
+  color: #fceee3;
+}
+
+/* メイン画像と紹介 */
+.intro {
+  padding: 2rem;
+  text-align: center;
+}
+.main-image {
+  width: 90%;
+  max-width: 500px;
+  border-radius: 12px;
+  margin: 1rem 0;
+}
+
+/* プランリスト */
+.plans {
+  background-color: #fceee3;
+  padding: 2rem;
+  text-align: center;
+}
+.plan-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+.plan-card {
+  display: block;
+  width: 250px;
+  background-color: #ffffff;
+  border: 2px solid #d8b08c;
+  border-radius: 12px;
+  padding: 1rem;
+  text-decoration: none;
+  color: #333;
+  transition: transform 0.2s;
+}
+.plan-card:hover {
+  transform: scale(1.05);
+  background-color: #fff4ea;
+}
+
+/* フッター */
+footer {
+  background-color: #d8b08c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  .plan-card {
+    width: 100%;
+  }
+}
+/* 表の基本スタイル */
+table {
+  width: 90%;
+  max-width: 900px;
+  margin: 1rem auto 3rem auto;
+  border-collapse: collapse;
+  background-color: #fff4e6;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 8px rgba(216, 176, 140, 0.3);
+}
+
+thead {
+  background-color: #d8b08c;
+  color: #fff;
+  font-weight: bold;
+}
+
+th, td {
+  padding: 0.8rem 1rem;
+  border-bottom: 1px solid #d8b08c;
+  text-align: center;
+}
+
+tbody tr:hover {
+  background-color: #f9ead2;
+}
+
+/* リンク色 */
+table a {
+  color: #6b4226;
+  text-decoration: underline;
+}
+
+/* スマホ対応 */
+@media (max-width: 600px) {
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+  tr {
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #d8b08c;
+  }
+  td {
+    border: none;
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+  td:before {
+    position: absolute;
+    top: 0.8rem;
+    left: 1rem;
+    width: 45%;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #6b4226;
+  }
+  td:nth-of-type(1):before { content: "宿名"; }
+  td:nth-of-type(2):before { content: "価格帯"; }
+  td:nth-of-type(3):before { content: "部屋人数"; }
+  td:nth-of-type(4):before { content: "特徴"; }
+  /* カフェ用 */
+  tbody tr td:nth-of-type(1):before { content: "カフェ名"; }
+  tbody tr td:nth-of-type(2):before { content: "価格帯"; }
+  tbody tr td:nth-of-type(3):before { content: "雰囲気"; }
+  tbody tr td:nth-of-type(4):before { content: "リンク"; }
+}
+.facility-links {
+  background-color: #fff4e6;
+  padding: 1.5rem 1rem;
+  margin: 2rem auto;
+  max-width: 600px;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(216, 176, 140, 0.3);
+}
+
+.facility-links h2 {
+  color: #6b4226;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.facility-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.facility-links ul li {
+  margin: 0.6rem 0;
+  font-size: 1.1rem;
+}
+
+.facility-links ul li a {
+  color: #a05a2c;
+  text-decoration: underline;
+}
+
+.facility-links ul li a:hover {
+  color: #d89857;
+}
